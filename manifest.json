@@ -1,0 +1,30 @@
+{
+  "name": "chrome devtools",
+  "version": "0.0.1",
+  "description": "chrome devtools",
+  "manifest_version": 2,
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png",
+    "128": "img/icon.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "img/icon.png",
+      "48": "img/icon.png",
+      "128": "img/icon.png"
+    },
+    "default_title": "My Chrome Devtools",
+    "default_popup": "this is my chrome devtools"
+  },
+  "web_accessible_resources": [
+    "devtools.html",
+    "devtools-background.html"
+  ],
+  "devtools_page": "devtools-background.html",
+  "permissions": [
+    "<all_urls>",
+    "storage"
+  ],
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}
